@@ -1,11 +1,3 @@
-
-# 	print("length of dictionary -",len(Atomic_elements))
-# 	search_key=input("enter the symbol to search ")
-# 	if search_key in Atomic_elements.keys():
-# 		print(Atomic_elements[search_key])
-# 	else:
-# 		print("Key does not exist in dictionary")
-
 def AtomicDictionary():
   print("Original elements : ")
   elements = {"C": "Carbon", "B": "Boron", "S":"Sulphur", "N": "Nitrogen"}
