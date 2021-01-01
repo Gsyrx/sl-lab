@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <form id="form" style="text-align: center">
+      <h2>Simple Calculator</h2>
+      <p>Enter first number</p>
+      <input type="number" id="first" />
+      <p>Enter second number</p>
+      <input type="number" id="second" />
+      <h3>Different operations to be performed</h3>
+      <input
+        type="radio"
+        class="operation"
+        id="add"
+        value="add"
+        name="operation"
+      />
+      <label for="add">Addition</label>
+      <input
+        type="radio"
+        class="operation"
+        id="sub"
+        value="sub"
+        name="operation"
+      />
+      <label for="sub">Subtraction</label>
+      <input
+        type="radio"
+        class="operation"
+        id="mul"
+        value="mul"
+        name="operation"
+      />
+      <label for="mul">Multiplication</label>
+      <input
+        type="radio"
+        class="operation"
+        id="div"
+        value="div"
+        name="operation"
+      />
+      <label for="div">Division</label><br /><br />
+      <button type="submit">Submit</button>
+      <p id="result"></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
