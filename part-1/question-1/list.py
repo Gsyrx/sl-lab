@@ -1,28 +1,38 @@
-list = [];
+# creating list
+list = []
 
-size = int(input("Enter the size of the list : "))
+size = int(input("Enter the size of list : "))
 
-for i in range(0,size):
-  data = int(input("Enter the data to be inserted : "))
+for i in range(size):
+  data = int(input("Enter the data : "))
   list.append(data)
-print("Data in the list  : ", list);
 
+print("Data in the list = ", list)
+
+# min and max
 minimum = min(list)
 maximum = max(list)
-print("The minimum value in the list : ",minimum)
-print("The maximum value in the list : ",maximum)
+print("Minimum value = ", minimum)
+print("Maximum value = ", maximum)
 
-new_element = int(input("Enter new element to br inserted : "))
-position = int(input("Enter the position to be inserted : "))
+# inserting new elements
+new_element = int(input("Enter new element = "))
+position = int(input("Enter the position = "))
+
 list.insert(position,new_element)
-print("New data in the list : ",list)
+print("New list = ", list)
 
-removed_element = int(input("Enter the element to be removed : "))
-list.remove(removed_element)
-print("New list after removing elements : ", list)
 
-value = int(input("Enter the number to be determined : "))
+# delete element
+deleted_element = int(input("Enter the number to be deleted = "))
+list.remove(deleted_element)
+
+print("New list = ", list)
+
+# present or not
+value = int(input("Enter the number to be checked = "))
+
 if value in list:
-  print("Element is found at index : ", list.index(value))
+  print("Number is found at index ", list.index(value))
 else:
-  print("Element not found")
+  print("Number not found")
