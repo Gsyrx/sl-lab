@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <form id="form" style="text-align: center">
+      <input type="radio" id="cake" value="cake" name="item" class="item" />
+      <label for="cake"><img src="./cake.png" width="100px" /> </label>
+      <h3>Price = $5</h3>
+      <p>Quantity</p>
+      <input type="number" id="cakeQuantity" /> <br /><br />
+      <input type="radio" id="cookie" value="cookie" name="item" class="item" />
+      <label for="cookie"><img src="./cookie.png" width="100px" /> </label>
+      <h3>Price = $10</h3>
+      <p>Quantity</p>
+      <input type="number" id="cookieQuantity" /><br /><br />
+      <button type="submit">Order</button>
+      <h2 id="result"></h2>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
