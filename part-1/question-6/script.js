@@ -22,7 +22,7 @@ function display() {
   result_3.innerHTML = 'Customer feedback = ' + other_feedback.value;
 }
 
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   display();
 });

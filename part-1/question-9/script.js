@@ -18,7 +18,7 @@ function longest() {
   size.innerHTML = 'Length of longest word : ' + len;
 }
 
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   longest();
 });

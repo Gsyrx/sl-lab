@@ -11,7 +11,7 @@ function check_divisiblity() {
   }
 }
 
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   check_divisiblity();
 });
