@@ -29,7 +29,7 @@ window.onload = function () {
   const year = document.getElementById('year');
   const menu = document.getElementById('menu');
 
-  teslaModels.forEach(function (item, index) {
+  teslaModels.forEach((item, index) => {
     listElement = document.createElement('th');
 
     listElement.onmouseover = function () {
@@ -42,4 +42,18 @@ window.onload = function () {
     listElement.innerHTML = item.name;
     menu.appendChild(listElement);
   });
+
+  // teslaModels.forEach(function (item, index) {
+  //   listElement = document.createElement('th');
+
+  //   listElement.onmouseover = function () {
+  //     name.innerHTML = teslaModels[index].name;
+  //     price.innerHTML = teslaModels[index].price;
+  //     year.innerHTML = teslaModels[index].year;
+  //     image.src = teslaModels[index].image;
+  //   };
+
+  //   listElement.innerHTML = item.name;
+  //   menu.appendChild(listElement);
+  // });
 };
