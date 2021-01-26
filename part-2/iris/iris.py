@@ -21,11 +21,20 @@ ax = sns.countplot(data = df,x = ' Sepal_Width',hue = 'Class',palette='Set1',)
 ax.set(title='Flowers of each specie',xlabel='Sepal Width',ylabel='No. of flowers')
 plt.show()
 
-ax = sns.countplot(data = df,x = ' Petal_Length',hue = 'Class',palette='Set1',)
-ax.set(title='Flowers of each specie',xlabel='Petal Length',ylabel='No. of flowers')
+
+
+interval = (0,1,2,4)
+category = ['<1','1 to 2','>2']
+df['Petal_Catg'] = pd.cut(df[' Petal_Width'],interval,labels=category)
+
+ax = sns.countplot(data = df,x = 'Petal_Catg',hue = 'Class',palette='Set1',)
+ax.set(title='Petal Width',xlabel='Category of Petals',ylabel='No. of flowers')
 plt.show()
 
-ax = sns.countplot(data = df,x = ' Petal_Width',hue = 'Class',palette='Set1',)
-ax.set(title='Flowers of each specie',xlabel='Petal Width',ylabel='No. of flowers')
+
+
+ax = sns.countplot(data = df[df['Class'] == 'Iris-setosa'],x = ' Sepal_Width',palette='Set1')
+ax.set(title='Iris-setosa',xlabel='Sepal Width',ylabel='No. of flowers')
 plt.show()
+
 
